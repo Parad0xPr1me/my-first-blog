@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Django Girls - Blog</title>
+	<title>JaccMultiverse</title>
 </head>
 <body>
 	<div>
-		<h1><a href="#">Django Girls Blog</a></h1>
+		<h1><a href="#">Clydoggo</a></h1>
 	</div>
-
+	<div>
+		<p>No matter how difficult life may seem, there is always something that you can do at succeed at...</p>
+	</div>
 	{% for post in posts %}
 		<div>
 			<p>Published: {{ post.publish_date }}</p>
-			<h2><a href="#">{{ post.title }}</a></h2>
+			<h2 style="color: green"><a href="#">{{ post.title }}</a></h2>
 			<p>{{ post.text }}</p>
 			
 		</div>
